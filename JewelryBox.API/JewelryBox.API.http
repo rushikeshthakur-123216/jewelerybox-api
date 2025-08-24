@@ -1,0 +1,6 @@
+@JewelryBox.API_HostAddress = http://localhost:5100
+
+GET {{JewelryBox.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

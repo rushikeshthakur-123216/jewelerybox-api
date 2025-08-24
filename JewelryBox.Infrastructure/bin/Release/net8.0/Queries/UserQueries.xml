@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Queries>
+  <User>
+    <GetById>
+      SELECT Id, Username, Email, PasswordHash, FirstName, LastName, CreatedAt, LastLoginAt, IsActive 
+      FROM Users 
+      WHERE Id = @Id AND IsActive = true
+    </GetById>
+    
+    <GetByEmail>
+      SELECT Id, Username, Email, PasswordHash, FirstName, LastName, CreatedAt, LastLoginAt, IsActive 
+      FROM Users 
+      WHERE Email = @Email AND IsActive = true
+    </GetByEmail>
+    
+    <GetByUsername>
+      SELECT Id, Username, Email, PasswordHash, FirstName, LastName, CreatedAt, LastLoginAt, IsActive 
+      FROM Users 
+      WHERE Username = @Username AND IsActive = true
+    </GetByUsername>
+    
+    <GetAll>
+      SELECT Id, Username, Email, PasswordHash, FirstName, LastName, CreatedAt, LastLoginAt, IsActive 
+      FROM Users 
+      WHERE IsActive = true
+    </GetAll>
+    
+    <Create>
+      INSERT INTO Users (Username, Email, PasswordHash, FirstName, LastName, CreatedAt, IsActive) 
+      VALUES (@Username, @Email, @PasswordHash, @FirstName, @LastName, @CreatedAt, @IsActive) 
+      RETURNING Id
+    </Create>
+    
+    <Update>
+      UPDATE Users 
+      SET Username = @Username, Email = @Email, PasswordHash = @PasswordHash, 
+          FirstName = @FirstName, LastName = @LastName, LastLoginAt = @LastLoginAt 
+      WHERE Id = @Id
+    </Update>
+    
+    <Delete>
+      UPDATE Users SET IsActive = false WHERE Id = @Id
+    </Delete>
+    
+    <ExistsByEmail>
+      SELECT COUNT(1) FROM Users WHERE Email = @Email AND IsActive = true
+    </ExistsByEmail>
+    
+    <ExistsByUsername>
+      SELECT COUNT(1) FROM Users WHERE Username = @Username AND IsActive = true
+    </ExistsByUsername>
+    
+    <UpdateLastLogin>
+      UPDATE Users SET LastLoginAt = @LastLoginAt WHERE Id = @Id
+    </UpdateLastLogin>
+  </User>
+</Queries>

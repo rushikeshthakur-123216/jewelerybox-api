@@ -1,0 +1,11 @@
+D:\Projects\JeweleryBox\JewelryBox.Domain\bin\Release\net8.0\JewelryBox.Domain.deps.json
+D:\Projects\JeweleryBox\JewelryBox.Domain\bin\Release\net8.0\JewelryBox.Domain.dll
+D:\Projects\JeweleryBox\JewelryBox.Domain\bin\Release\net8.0\JewelryBox.Domain.pdb
+D:\Projects\JeweleryBox\JewelryBox.Domain\obj\Release\net8.0\JewelryBox.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\JeweleryBox\JewelryBox.Domain\obj\Release\net8.0\JewelryBox.Domain.AssemblyInfoInputs.cache
+D:\Projects\JeweleryBox\JewelryBox.Domain\obj\Release\net8.0\JewelryBox.Domain.AssemblyInfo.cs
+D:\Projects\JeweleryBox\JewelryBox.Domain\obj\Release\net8.0\JewelryBox.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\JeweleryBox\JewelryBox.Domain\obj\Release\net8.0\JewelryBox.Domain.dll
+D:\Projects\JeweleryBox\JewelryBox.Domain\obj\Release\net8.0\refint\JewelryBox.Domain.dll
+D:\Projects\JeweleryBox\JewelryBox.Domain\obj\Release\net8.0\JewelryBox.Domain.pdb
+D:\Projects\JeweleryBox\JewelryBox.Domain\obj\Release\net8.0\ref\JewelryBox.Domain.dll

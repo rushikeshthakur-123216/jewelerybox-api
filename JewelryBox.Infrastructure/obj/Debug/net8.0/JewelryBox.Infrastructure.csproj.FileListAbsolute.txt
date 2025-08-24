@@ -1,0 +1,16 @@
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\bin\Debug\net8.0\Queries\UserQueries.xml
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\bin\Debug\net8.0\JewelryBox.Infrastructure.deps.json
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\bin\Debug\net8.0\JewelryBox.Infrastructure.dll
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\bin\Debug\net8.0\JewelryBox.Infrastructure.pdb
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\bin\Debug\net8.0\JewelryBox.Domain.dll
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\bin\Debug\net8.0\JewelryBox.Domain.pdb
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\JewelryBox.Infrastructure.csproj.AssemblyReference.cache
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\JewelryBox.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\JewelryBox.Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\JewelryBox.Infrastructure.AssemblyInfo.cs
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\JewelryBox.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\JewelryB.2174200F.Up2Date
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\JewelryBox.Infrastructure.dll
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\refint\JewelryBox.Infrastructure.dll
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\JewelryBox.Infrastructure.pdb
+D:\Projects\JeweleryBox\JewelryBox.Infrastructure\obj\Debug\net8.0\ref\JewelryBox.Infrastructure.dll
