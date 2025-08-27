@@ -1,18 +1,29 @@
-# Use .NET 8 SDK image for build
+# ---------- Build stage ----------
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy everything and restore
-COPY . .
+# Copy solution and project files (for restore caching)
+COPY JewelryBox.sln ./
+COPY JewelryBox.API/JewelryBox.API.csproj JewelryBox.API/
+COPY JewelryBox.Application/JewelryBox.Application.csproj JewelryBox.Application/
+COPY JewelryBox.Core/JewelryBox.Core.csproj JewelryBox.Core/
+COPY JewelryBox.Domain/JewelryBox.Domain.csproj JewelryBox.Domain/
+COPY JewelryBox.Infrastructure/JewelryBox.Infrastructure.csproj JewelryBox.Infrastructure/
+
 RUN dotnet restore
 
-# Publish app
-RUN dotnet publish -c Release -o /app
+# Copy all source and build
+COPY . .
+WORKDIR /src/JewelryBox.API
+RUN dotnet publish -c Release -o /app/publish
 
-# Runtime image
+# ---------- Runtime stage ----------
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
-COPY --from=build /app ./
+COPY --from=build /app/publish .
 
-# Start the app
-ENTRYPOINT ["dotnet", "YourProjectName.dll"]
+# Expose port (informational)
+EXPOSE 80
+
+# Start app, bind to Render's PORT or fallback to 80
+ENTRYPOINT ["sh", "-c", "dotnet JewelryBox.API.dll --urls http://0.0.0.0:${PORT:-80}"]
